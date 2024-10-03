@@ -50,3 +50,6 @@ h6 {
 
 /* Reset End */
 
+li {
+    list-style: none;
+}
