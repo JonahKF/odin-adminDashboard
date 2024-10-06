@@ -62,13 +62,30 @@ li {
 .sidebar {
     grid-column: 1;
     grid-row: 1 / 6;
+    background-color: aqua;
     border: 1px solid black;
+}
+
+.nav {
+    padding-top: 20px;
+}
+
+.nav > ul > li {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 14px;
+    align-items: center;
+}
+
+.nav > ul > li:first-child {
+    font-size: 1.5rem;
+    margin-bottom: 45px;
 }
 
 .header {
     grid-column: 2;
     display: grid;
-    grid-template-rows: 50px 60px;
+    grid-template-rows: 60px 80px;
     background-color: #a37c7c;
     border: 1px solid black;
 }
