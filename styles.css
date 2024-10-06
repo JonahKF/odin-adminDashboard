@@ -54,3 +54,50 @@ li {
     list-style: none;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / 6;
+    border: 1px solid black;
+}
+
+.header {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 50px 60px;
+    background-color: #a37c7c;
+    border: 1px solid black;
+}
+
+.header > .top-bar {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 40px;
+    gap: 8px;
+}
+
+.top-bar > #notification-button {
+    margin-left: auto;
+}
+
+.header > .bottom-bar {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 40px;
+    gap: 8px;
+}
+
+.bottom-bar > button:first-of-type {
+    margin-left: auto;
+}
+
+.main-content {
+    grid-column: 2;
+    border: 1px solid black;
+}
