@@ -63,6 +63,14 @@ svg {
     filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(307deg) brightness(107%) contrast(97%);
 }
 
+a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
