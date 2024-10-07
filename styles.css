@@ -56,6 +56,11 @@ h6 {
 
 li {
     list-style: none;
+    margin-top: 15px;
+}
+
+svg {
+    filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(307deg) brightness(107%) contrast(97%);
 }
 
 .container {
@@ -66,7 +71,7 @@ li {
 .sidebar {
     grid-column: 1;
     grid-row: 1 / 6;
-    background-color: aqua;
+    background-color: rgb(86, 109, 109);
     border: 1px solid black;
 }
 
@@ -76,14 +81,26 @@ li {
 
 .nav > ul > li {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 30px 150px;
     gap: 14px;
     align-items: center;
+    color: white;
 }
 
 .nav > ul > li:first-child {
+    grid-template-columns: 60px 150px;
     font-size: 1.5rem;
     margin-bottom: 45px;
+    margin-top: 0;
+    margin-left: -15px;
+}
+
+.nav > ul > li:first-child > div {
+    margin-left: -16px;
+}
+
+.nav > ul > li:nth-child(7) {
+    margin-bottom: 70px;
 }
 
 .header {
