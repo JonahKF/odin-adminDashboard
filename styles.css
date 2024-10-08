@@ -82,6 +82,7 @@ a {
 
 .nav {
     padding-top: 20px;
+    position: absolute;
 }
 
 .nav > ul > li {
@@ -132,11 +133,22 @@ a {
     align-items: center;
     padding-left: 30px;
     padding-right: 40px;
-    gap: 8px;
+    margin-right: 50px;
+    gap: 28px;
 }
 
 .top-bar > #notification-button {
     margin-left: auto;
+}
+
+.top-bar > input {
+    width: 50%;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+	border: none;
+    outline: none;
+    padding: 5px;
+    padding-left: 20px;
 }
 
 .header > .bottom-bar {
@@ -144,11 +156,34 @@ a {
     align-items: center;
     padding-left: 30px;
     padding-right: 40px;
-    gap: 8px;
+    gap: 30px;
 }
 
-.bottom-bar > button:first-of-type {
+.intro-text {
+    font-weight: 600;
+    font-size: .7rem;
+}
+
+.username {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.bottom-bar > .buttons {
     margin-left: auto;
+    margin-right: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons > button {
+    outline: none;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
 }
 
 .main-content {
@@ -189,7 +224,7 @@ a {
 }
 
 .icons > svg {
-    margin: 20px
+    margin: 20px;
 }
 
 .announcements-container { 
