@@ -59,7 +59,7 @@ li {
     margin-top: 15px;
 }
 
-svg {
+li > svg {
     filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(307deg) brightness(107%) contrast(97%);
 }
 
@@ -186,6 +186,10 @@ a {
     position: absolute;
     bottom: 15px;
     right: 15px;
+}
+
+.icons > svg {
+    margin: 20px
 }
 
 .announcements-container { 
