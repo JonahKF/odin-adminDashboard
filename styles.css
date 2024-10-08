@@ -59,7 +59,7 @@ li {
     margin-top: 15px;
 }
 
-li > svg {
+li>svg {
     filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(307deg) brightness(107%) contrast(97%);
 }
 
@@ -77,7 +77,6 @@ a {
     grid-column: 1;
     grid-row: 1 / 6;
     background-color: rgb(86, 109, 109);
-    border: 1px solid black;
 }
 
 .nav {
@@ -85,7 +84,7 @@ a {
     position: absolute;
 }
 
-.nav > ul > li {
+.nav>ul>li {
     display: grid;
     grid-template-columns: 30px 150px;
     height: 30px;
@@ -95,7 +94,7 @@ a {
     color: white;
 }
 
-.nav > ul > li:first-child {
+.nav>ul>li:first-child {
     grid-template-columns: 60px 150px;
     font-size: 1.5rem;
     margin-bottom: 45px;
@@ -103,19 +102,19 @@ a {
     margin-left: -15px;
 }
 
-.nav > ul > li:first-child > div {
+.nav>ul>li:first-child>div {
     margin-left: -16px;
 }
 
-.nav > ul > li:nth-child(7) {
+.nav>ul>li:nth-child(7) {
     margin-bottom: 70px;
 }
 
-.nav > ul > li > div > a {
-    transition:.2s;
+.nav>ul>li>div>a {
+    transition: .2s;
 }
 
-.nav > ul > li > div > a:hover {
+.nav>ul>li>div>a:hover {
     font-size: 1.2em;
     color: black;
 }
@@ -124,11 +123,12 @@ a {
     grid-column: 2;
     display: grid;
     grid-template-rows: 60px 80px;
-    background-color: #a37c7c;
-    border: 1px solid black;
+    position: relative;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 7px -6px #222;
 }
 
-.header > .top-bar {
+.header>.top-bar {
     display: flex;
     align-items: center;
     padding-left: 30px;
@@ -137,21 +137,21 @@ a {
     gap: 28px;
 }
 
-.top-bar > #notification-button {
+.top-bar>#notification-button {
     margin-left: auto;
 }
 
-.top-bar > input {
+.top-bar>input {
     width: 50%;
     border-radius: 20px;
     background-color: #f0f0f0;
-	border: none;
+    border: none;
     outline: none;
     padding: 5px;
     padding-left: 20px;
 }
 
-.header > .bottom-bar {
+.header>.bottom-bar {
     display: flex;
     align-items: center;
     padding-left: 30px;
@@ -169,21 +169,29 @@ a {
     font-size: 1.3rem;
 }
 
-.bottom-bar > .buttons {
+.bottom-bar>.buttons {
     margin-left: auto;
     margin-right: 40px;
     display: flex;
     gap: 20px;
 }
 
-.buttons > button {
+.buttons>button {
     outline: none;
     border: none;
-    background-color: #f0f0f0;
+    background-color: rgb(30, 144, 255);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.35);
+    font-weight: 500;
     border-radius: 20px;
     width: 100px;
     height: 35px;
     cursor: pointer;
+}
+
+.buttons>button:hover {
+    background-color: rgb(17, 111, 204);
+    transition: 0.2s;
 }
 
 .main-content {
@@ -193,7 +201,6 @@ a {
     background-color: #f0f0f0;
     padding: 30px;
     gap: 10px;
-    border: 1px solid black;
 }
 
 .your-projects-grid {
@@ -201,7 +208,7 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: 18px;
     margin-top: 18px;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .card {
@@ -213,9 +220,12 @@ a {
     padding-left: 30px;
     padding-right: 13px;
     position: relative;
+    border: 1px solid transparent;
+    border-left: 5px solid rgb(233, 205, 47);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.35);
 }
 
-.card > .icons {
+.card>.icons {
     display: flex;
     justify-content: end;
     position: absolute;
@@ -223,11 +233,11 @@ a {
     right: 15px;
 }
 
-.icons > svg {
+.icons>svg {
     margin: 20px;
 }
 
-.announcements-container { 
+.announcements-container {
     margin-top: 18px;
     background-color: white;
     border-radius: 5px;
@@ -237,6 +247,7 @@ a {
     display: grid;
     align-items: center;
     gap: 15px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.35);
 }
 
 .trending {
