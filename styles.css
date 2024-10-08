@@ -66,9 +66,6 @@ svg {
 a {
     text-decoration: inherit;
     color: inherit;
-    cursor: auto;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -90,6 +87,7 @@ a {
 .nav > ul > li {
     display: grid;
     grid-template-columns: 30px 150px;
+    height: 30px;
     gap: 14px;
     align-items: center;
     color: white;
@@ -109,6 +107,15 @@ a {
 
 .nav > ul > li:nth-child(7) {
     margin-bottom: 70px;
+}
+
+.nav > ul > li > div > a {
+    transition:.2s;
+}
+
+.nav > ul > li > div > a:hover {
+    font-size: 1.2em;
+    color: black;
 }
 
 .header {
